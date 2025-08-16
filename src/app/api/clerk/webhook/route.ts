@@ -6,7 +6,7 @@ export const POST = async (req: Request) => {
   console.log("clerk webhook received", data);
   console.log(data.first_name ," firstname")
 
-const emailAddress = data.email_addresses?.[0]?.email_address || "hkamoriya@gmail.com"; // safe fallback
+const emailAddress = data.email_addresses?.[0]?.email_address || "kamoriyaharsh@gmail.com"; // safe fallback
   const firstName = data.first_name
   const lastName = data.last_name
   const imageUrl = data.image_url
